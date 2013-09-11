@@ -21,9 +21,6 @@
 		B8595DCF1616778400EF8C36 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8595DCE1616778400EF8C36 /* MapViewController.m */; };
 		B8595DDE1616E71800EF8C36 /* SplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8595DDD1616E71700EF8C36 /* SplashViewController.m */; };
 		B8595DE21616F6C700EF8C36 /* GSWTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8595DE11616F6C700EF8C36 /* GSWTabBarViewController.m */; };
-		B8595DE6161728E400EF8C36 /* SplashScreen-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B8595DE3161728E300EF8C36 /* SplashScreen-568h@2x.png */; };
-		B8595DE7161728E400EF8C36 /* SplashScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = B8595DE4161728E300EF8C36 /* SplashScreen.png */; };
-		B8595DE8161728E400EF8C36 /* SplashScreen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B8595DE5161728E400EF8C36 /* SplashScreen@2x.png */; };
 		B8870E9A1612B5FF0099D59E /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = B8870E921612B5FF0099D59E /* Icon-Small-50.png */; };
 		B8870E9B1612B5FF0099D59E /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B8870E931612B5FF0099D59E /* Icon-Small@2x.png */; };
 		B8870E9C1612B5FF0099D59E /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = B8870E941612B5FF0099D59E /* Icon-Small.png */; };
@@ -47,6 +44,9 @@
 		B8C91F0915F5C7B20080254D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C91F0815F5C7B20080254D /* main.m */; };
 		B8C91F0D15F5C7B20080254D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C91F0C15F5C7B20080254D /* AppDelegate.m */; };
 		B8C91F1015F5C7B20080254D /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8C91F0E15F5C7B20080254D /* MainStoryboard.storyboard */; };
+		B8E4796917DF645D00334BCA /* SplashScreen-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B8E4796617DF645C00334BCA /* SplashScreen-568h@2x.png */; };
+		B8E4796A17DF645D00334BCA /* SplashScreen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B8E4796717DF645C00334BCA /* SplashScreen@2x.png */; };
+		B8E4796B17DF645D00334BCA /* SplashScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = B8E4796817DF645D00334BCA /* SplashScreen.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,9 +70,6 @@
 		B8595DDD1616E71700EF8C36 /* SplashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplashViewController.m; sourceTree = "<group>"; };
 		B8595DE01616F6C600EF8C36 /* GSWTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSWTabBarViewController.h; sourceTree = "<group>"; };
 		B8595DE11616F6C700EF8C36 /* GSWTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSWTabBarViewController.m; sourceTree = "<group>"; };
-		B8595DE3161728E300EF8C36 /* SplashScreen-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SplashScreen-568h@2x.png"; sourceTree = "<group>"; };
-		B8595DE4161728E300EF8C36 /* SplashScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SplashScreen.png; sourceTree = "<group>"; };
-		B8595DE5161728E400EF8C36 /* SplashScreen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SplashScreen@2x.png"; sourceTree = "<group>"; };
 		B8870E921612B5FF0099D59E /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
 		B8870E931612B5FF0099D59E /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
 		B8870E941612B5FF0099D59E /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
@@ -105,6 +102,9 @@
 		B8C91F0B15F5C7B20080254D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B8C91F0C15F5C7B20080254D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B8C91F0F15F5C7B20080254D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		B8E4796617DF645C00334BCA /* SplashScreen-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SplashScreen-568h@2x.png"; sourceTree = "<group>"; };
+		B8E4796717DF645C00334BCA /* SplashScreen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SplashScreen@2x.png"; sourceTree = "<group>"; };
+		B8E4796817DF645D00334BCA /* SplashScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SplashScreen.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,9 +126,9 @@
 		B8870EA21612B62A0099D59E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				B8595DE3161728E300EF8C36 /* SplashScreen-568h@2x.png */,
-				B8595DE4161728E300EF8C36 /* SplashScreen.png */,
-				B8595DE5161728E400EF8C36 /* SplashScreen@2x.png */,
+				B8E4796617DF645C00334BCA /* SplashScreen-568h@2x.png */,
+				B8E4796717DF645C00334BCA /* SplashScreen@2x.png */,
+				B8E4796817DF645D00334BCA /* SplashScreen.png */,
 				B83619681613A8EE001F4BC3 /* About_30px.png */,
 				B836196A1613A8EE001F4BC3 /* Browse_30px.png */,
 				B836196C1613A8EE001F4BC3 /* Event_30px.png */,
@@ -294,9 +294,9 @@
 				B83619721613A8EE001F4BC3 /* Browse_30px.png in Resources */,
 				B83619741613A8EE001F4BC3 /* Event_30px.png in Resources */,
 				B83619761613A8EE001F4BC3 /* Map_30px.png in Resources */,
-				B8595DE6161728E400EF8C36 /* SplashScreen-568h@2x.png in Resources */,
-				B8595DE7161728E400EF8C36 /* SplashScreen.png in Resources */,
-				B8595DE8161728E400EF8C36 /* SplashScreen@2x.png in Resources */,
+				B8E4796917DF645D00334BCA /* SplashScreen-568h@2x.png in Resources */,
+				B8E4796A17DF645D00334BCA /* SplashScreen@2x.png in Resources */,
+				B8E4796B17DF645D00334BCA /* SplashScreen.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SplashViewController : UIViewController
+@interface SplashViewController : UIViewController {
+    
+}
+@property IBOutlet UIImageView *imageView;
 
 @end
