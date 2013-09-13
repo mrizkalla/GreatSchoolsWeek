@@ -54,7 +54,7 @@
         predicate = [NSPredicate predicateWithFormat:@"SELF.Category contains[c] %@", self.selectedValue];
     } else if (self.selectedSegment == 1 ) {
         // Day filter
-        predicate = [NSPredicate predicateWithFormat:@"SELF.%@ == 1", self.selectedValue];  
+        predicate = [NSPredicate predicateWithFormat:@"SELF.%@ == '1'", self.selectedValue];  
     } else {
         predicate = [NSPredicate predicateWithFormat:@"SELF.PercentInt contains[c] %@", self.selectedValue];
     }
@@ -63,7 +63,7 @@
     // Now create a dictionary for sectioned headers
     if (self.selectedSegment > 0)
     {
-        catetories = [NSArray arrayWithObjects:@"Restaurants", @"Services", @"Retailers", @"Drinks and Desserts", @"Grocers", @"Family Entertainment", nil];
+        catetories = [NSArray arrayWithObjects:@"Restaurants", @"Services", @"Retailers", @"Drinks and Desserts", @"Grocers", @"Family Entertainment", @"Food Trucks", nil];
         NSMutableArray* sortedBusinessArray = [[NSMutableArray alloc]initWithCapacity:[catetories count]];
         for (NSString *iterator in catetories) {
             predicate = [NSPredicate predicateWithFormat:@"SELF.Category contains[c] %@", iterator];
@@ -134,7 +134,7 @@
     cell.textLabel.text = [business objectForKey:@"Name"];
     NSArray *split = [[business objectForKey:@"Address"] componentsSeparatedByString:@","];
     if ( [split count] > 1) {
-        cell.detailTextLabel.text = [split objectAtIndex:1];
+        cell.detailTextLabel.text = [split objectAtIndex:([split count] - 1)];
     } else {
         cell.detailTextLabel.text = @"";
     }

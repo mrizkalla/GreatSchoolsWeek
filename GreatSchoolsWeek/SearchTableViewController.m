@@ -88,7 +88,7 @@
     cell.textLabel.text = [business objectForKey:@"Name"];
     NSArray *split = [[business objectForKey:@"Address"] componentsSeparatedByString:@","];
     if ( [split count] > 1) {
-        cell.detailTextLabel.text = [split objectAtIndex:1];
+        cell.detailTextLabel.text = [split objectAtIndex:([split count]-1)];
     } else {
         cell.detailTextLabel.text = @"";
     }
