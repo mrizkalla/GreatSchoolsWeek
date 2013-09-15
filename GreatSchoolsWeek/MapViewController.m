@@ -71,31 +71,29 @@
         [mapView removeAnnotation:annotation];
     }
     
+    NSLog(@"dropFilteredPinsOnMap: length of businessPinsArray: %d", businessPinsArray.count);
+    
+    
     for (NSDictionary *business in businessPinsArray) {
         // Map stuff
-        CLGeocoder *geocoder = [[CLGeocoder alloc] init];
         
-        [geocoder geocodeAddressString:[business objectForKey:@"Address"]
-                     completionHandler:^(NSArray* placemarks, NSError* error){
-                         for (CLPlacemark* aPlacemark in placemarks)
-                         {
-                             // Process the placemark.
-                             //NSLog(@"Lat: %f  Long: %f", aPlacemark.location.coordinate.latitude, aPlacemark.location.coordinate.longitude);
-                             
-                             //[mapView setCenterCoordinate:aPlacemark.location.coordinate animated:NO];
-                             /*
-                              MKCoordinateRegion viewRegion = MKCoordinateRegionMakeWithDistance(aPlacemark.location.coordinate, 0.5*METERS_PER_MILE, 0.5*METERS_PER_MILE);
-                              MKCoordinateRegion adjustedRegion = [mapView regionThatFits:viewRegion];
-                              [mapView setRegion:adjustedRegion animated:NO];
-                              */
-                             CLLocationCoordinate2D coordinate = aPlacemark.location.coordinate;
-                             BusinessLocation *annotation = [[BusinessLocation alloc] initWithName:[business objectForKey:@"Name"] address:[business objectForKey:@"Address"] coordinate:coordinate theBusiness:business];
-                             [self.mapView addAnnotation:annotation];
-                         }
-                     }];
+        NSLog(@"dropFilteredPinsOnMap: about to call geocoder for %@", [business objectForKey:@"Name"]);
+        
+        
+        //[mapView setCenterCoordinate:aPlacemark.location.coordinate animated:NO];
+        /*
+         MKCoordinateRegion viewRegion = MKCoordinateRegionMakeWithDistance(aPlacemark.location.coordinate, 0.5*METERS_PER_MILE, 0.5*METERS_PER_MILE);
+         MKCoordinateRegion adjustedRegion = [mapView regionThatFits:viewRegion];
+         [mapView setRegion:adjustedRegion animated:NO];
+         */
+        CLLocationCoordinate2D coordinate;
+        coordinate.latitude = [[business objectForKey:@"Latitude"] doubleValue];
+        coordinate.longitude = [[business objectForKey:@"Longitude"] doubleValue];
+        BusinessLocation *annotation = [[BusinessLocation alloc] initWithName:[business objectForKey:@"Name"] address:[business objectForKey:@"Address"] coordinate:coordinate theBusiness:business];
+        [self.mapView addAnnotation:annotation];
     }
-    
 }
+
 
 - (void)viewDidLoad
 {
@@ -116,7 +114,7 @@
     MKCoordinateRegion viewRegion = MKCoordinateRegionMakeWithDistance(zoomLocation, 10*METERS_PER_MILE, 10*METERS_PER_MILE);
     MKCoordinateRegion adjustedRegion = [mapView regionThatFits:viewRegion];
     [mapView setRegion:adjustedRegion animated:NO];
-
+    
     [self dropFilteredPinsOnMap:businessArray];
 
 }
@@ -174,6 +172,8 @@
 {
     // Update the filtered array based on the search text and scope.
     // Remove all objects from the filtered search array
+    NSLog(@"Inside searchBarSearchButtonClicked handler");
+    
     [self.filteredBusinessArray removeAllObjects];
     
     // Filter the array using NSPredicate
@@ -182,6 +182,8 @@
     
     filteredBusinessArray = [NSMutableArray arrayWithArray:[businessArray filteredArrayUsingPredicate:predicate]];
     
+    NSLog(@"The number of businesses is: %d", filteredBusinessArray.count);
+
     [self dropFilteredPinsOnMap:[NSArray arrayWithArray:filteredBusinessArray]];
 
 }
@@ -189,6 +191,7 @@
 -(void)searchBarCancelButtonClicked:(UISearchBar *)searchBar
 {
     [self.view endEditing:YES];
+    [self dropFilteredPinsOnMap:businessArray];
 }
 
 @end

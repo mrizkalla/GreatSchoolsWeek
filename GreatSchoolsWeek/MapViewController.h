@@ -10,7 +10,7 @@
 #import <MapKit/MapKit.h>
 
 
-@interface MapViewController : UIViewController <MKMapViewDelegate, UISearchBarDelegate>
+@interface MapViewController : UIViewController <MKMapViewDelegate, UISearchBarDelegate> 
 
 
 @property (strong,nonatomic) NSArray *businessArray;
