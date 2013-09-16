@@ -71,14 +71,8 @@
         [mapView removeAnnotation:annotation];
     }
     
-    NSLog(@"dropFilteredPinsOnMap: length of businessPinsArray: %d", businessPinsArray.count);
-    
-    
     for (NSDictionary *business in businessPinsArray) {
         // Map stuff
-        
-        NSLog(@"dropFilteredPinsOnMap: about to call geocoder for %@", [business objectForKey:@"Name"]);
-        
         
         //[mapView setCenterCoordinate:aPlacemark.location.coordinate animated:NO];
         /*
@@ -171,9 +165,7 @@
 -(void)searchBarSearchButtonClicked:(UISearchBar *)searchBar
 {
     // Update the filtered array based on the search text and scope.
-    // Remove all objects from the filtered search array
-    NSLog(@"Inside searchBarSearchButtonClicked handler");
-    
+    // Remove all objects from the filtered search array    
     [self.filteredBusinessArray removeAllObjects];
     
     // Filter the array using NSPredicate
@@ -182,8 +174,6 @@
     
     filteredBusinessArray = [NSMutableArray arrayWithArray:[businessArray filteredArrayUsingPredicate:predicate]];
     
-    NSLog(@"The number of businesses is: %d", filteredBusinessArray.count);
-
     [self dropFilteredPinsOnMap:[NSArray arrayWithArray:filteredBusinessArray]];
 
 }

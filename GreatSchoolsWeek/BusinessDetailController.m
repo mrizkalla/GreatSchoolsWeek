@@ -43,31 +43,31 @@
     mondayLabel.layer.borderColor = [UIColor blackColor].CGColor;
     mondayLabel.layer.borderWidth = 1;
     if (![[theBusiness objectForKey:@"Monday"] integerValue]) {
-        [mondayLabel setEnabled:NO];
+        mondayLabel.textColor = [UIColor colorWithRed: 216.0/255.0f green:216.0/255.0f blue:216.0/255.0f alpha:1.0];
     }
     
     tuesdayLabel.layer.borderColor = [UIColor blackColor].CGColor;
     tuesdayLabel.layer.borderWidth = 1;
     if (![[theBusiness objectForKey:@"Tuesday"] integerValue]) {
-        [tuesdayLabel setEnabled:NO];
+        tuesdayLabel.textColor = [UIColor colorWithRed: 216.0/255.0f green:216.0/255.0f blue:216.0/255.0f alpha:1.0];
     }
     
     wednesdayLabel.layer.borderColor = [UIColor blackColor].CGColor;
     wednesdayLabel.layer.borderWidth = 1;
     if (![[theBusiness objectForKey:@"Wednesday"] integerValue]) {
-        [wednesdayLabel setEnabled:NO];
+        wednesdayLabel.textColor = [UIColor colorWithRed: 216.0/255.0f green:216.0/255.0f blue:216.0/255.0f alpha:1.0];
     }
     
     thursdayLabel.layer.borderColor = [UIColor blackColor].CGColor;
     thursdayLabel.layer.borderWidth = 1;
     if (![[theBusiness objectForKey:@"Thursday"] integerValue]) {
-        [thursdayLabel setEnabled:NO];
+        thursdayLabel.textColor = [UIColor colorWithRed: 216.0/255.0f green:216.0/255.0f blue:216.0/255.0f alpha:1.0];
     }
     
     fridayLabel.layer.borderColor = [UIColor blackColor].CGColor;
     fridayLabel.layer.borderWidth = 1;
     if (![[theBusiness objectForKey:@"Friday"] integerValue]) {
-        [fridayLabel setEnabled:NO];
+        fridayLabel.textColor = [UIColor colorWithRed: 216.0/255.0f green:216.0/255.0f blue:216.0/255.0f alpha:1.0];
     }
     
     
