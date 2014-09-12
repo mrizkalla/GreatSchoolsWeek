@@ -33,8 +33,12 @@
     }
     
     addressLabel.text = [theBusiness objectForKey:@"Address"];
-    [phoneNumberButton setTitle:[NSString stringWithFormat:@"Call: %@", [theBusiness objectForKey:@"Phone Number"]] forState:(UIControlStateNormal)] ;
-    
+    NSString *phone = [theBusiness objectForKey:@"Phone Number"];
+    if (![phone  isEqual: @"-"]) {
+        [phoneNumberButton setTitle:[NSString stringWithFormat:@"Call: %@", [theBusiness objectForKey:@"Phone Number"]] forState:(UIControlStateNormal)] ;
+    } else {
+        phoneNumberButton.hidden = TRUE;
+    }
     notesCell.text = [theBusiness objectForKey:@"Notes"];
     
     websiteTextView.text = [theBusiness objectForKey:@"Website"];

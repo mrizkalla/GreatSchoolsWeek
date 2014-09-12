@@ -99,7 +99,23 @@
     }
 }
 
-//RootViewController.m
+- (void)tableView:(UITableView *)tableView willDisplayHeaderView:(UIView *)view forSection:(NSInteger)section
+{
+    // Background color
+    view.tintColor = [UIColor colorWithRed:195.0f/255.0f
+                                     green:211.0f/255.0f
+                                      blue:88.0f/255.0f
+                                     alpha:1.0f];
+    
+    // Text Color
+    UITableViewHeaderFooterView *header = (UITableViewHeaderFooterView *)view;
+    [header.textLabel setTextColor:[UIColor blackColor]];
+    
+    // Another way to set the background color
+    // Note: does not preserve gradient effect of original header
+    // header.contentView.backgroundColor = [UIColor blackColor];
+}
+
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
     
     if(self.selectedSegment == 0)
@@ -134,7 +150,7 @@
     cell.textLabel.text = [business objectForKey:@"Name"];
     NSArray *split = [[business objectForKey:@"Address"] componentsSeparatedByString:@","];
     if ( [split count] > 1) {
-        cell.detailTextLabel.text = [split objectAtIndex:([split count] - 1)];
+        cell.detailTextLabel.text = [split objectAtIndex:([split count] - 2)];
     } else {
         cell.detailTextLabel.text = @"";
     }

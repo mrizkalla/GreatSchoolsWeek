@@ -11,7 +11,8 @@
 
 #define kBgQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
 //#define kLatestGSWBusinessesURL [NSURL URLWithString:@"https://dl.dropbox.com/s/76ygnv61yks7uls/gsw.json?dl=1"]
-#define kLatestGSWBusinessesURL [NSURL URLWithString:@"https://dl.dropbox.com/s/fdgus4o4llyvl9r/gsw-2.json?dl=1"]
+//#define kLatestGSWBusinessesURL [NSURL URLWithString:@"https://dl.dropbox.com/s/fdgus4o4llyvl9r/gsw-2.json?dl=1"]
+#define kLatestGSWBusinessesURL [NSURL URLWithString:@"https://dl.dropbox.com/s/0zz5ytdyqvsuscm/gsw-2014.json?dl=1"]
 
 @interface SplashViewController ()
 

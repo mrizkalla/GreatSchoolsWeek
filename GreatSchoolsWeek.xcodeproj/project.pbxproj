@@ -18,6 +18,9 @@
 		B89FEB4F16091B76006A531C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B89FEB4E16091B76006A531C /* Default-568h@2x.png */; };
 		B89FEB52160B9C81006A531C /* BrowseDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B89FEB51160B9C81006A531C /* BrowseDetailTableViewController.m */; };
 		B89FEB5C160E4F2E006A531C /* BusinessDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = B89FEB5B160E4F2E006A531C /* BusinessDetailController.m */; };
+		B8A7FA7219C27D5A0023BEB9 /* SplashScreen-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B8A7FA6F19C27D5A0023BEB9 /* SplashScreen-568h@2x.png */; };
+		B8A7FA7319C27D5A0023BEB9 /* SplashScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = B8A7FA7019C27D5A0023BEB9 /* SplashScreen.png */; };
+		B8A7FA7419C27D5A0023BEB9 /* SplashScreen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B8A7FA7119C27D5A0023BEB9 /* SplashScreen@2x.png */; };
 		B8C4976D16029FEE00682D61 /* BrowseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C4976C16029FEE00682D61 /* BrowseViewController.m */; };
 		B8C91EFD15F5C7B20080254D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8C91EFC15F5C7B20080254D /* UIKit.framework */; };
 		B8C91EFF15F5C7B20080254D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8C91EFE15F5C7B20080254D /* Foundation.framework */; };
@@ -26,9 +29,6 @@
 		B8C91F0915F5C7B20080254D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C91F0815F5C7B20080254D /* main.m */; };
 		B8C91F0D15F5C7B20080254D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C91F0C15F5C7B20080254D /* AppDelegate.m */; };
 		B8C91F1015F5C7B20080254D /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8C91F0E15F5C7B20080254D /* MainStoryboard.storyboard */; };
-		B8E4796F17E0BF4100334BCA /* SplashScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = B8E4796C17E0BF4000334BCA /* SplashScreen.png */; };
-		B8E4797017E0BF4100334BCA /* SplashScreen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B8E4796D17E0BF4000334BCA /* SplashScreen@2x.png */; };
-		B8E4797117E0BF4100334BCA /* SplashScreen-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B8E4796E17E0BF4100334BCA /* SplashScreen-568h@2x.png */; };
 		B8E4797417E0BFD300334BCA /* About_30px.png in Resources */ = {isa = PBXBuildFile; fileRef = B8E4797217E0BFD200334BCA /* About_30px.png */; };
 		B8E4797517E0BFD300334BCA /* About_60px.png in Resources */ = {isa = PBXBuildFile; fileRef = B8E4797317E0BFD200334BCA /* About_60px.png */; };
 		B8E4797817E0C04A00334BCA /* Browse_30px.png in Resources */ = {isa = PBXBuildFile; fileRef = B8E4797617E0C04A00334BCA /* Browse_30px.png */; };
@@ -69,6 +69,9 @@
 		B89FEB51160B9C81006A531C /* BrowseDetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrowseDetailTableViewController.m; sourceTree = "<group>"; };
 		B89FEB5A160E4F2E006A531C /* BusinessDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusinessDetailController.h; sourceTree = "<group>"; };
 		B89FEB5B160E4F2E006A531C /* BusinessDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusinessDetailController.m; sourceTree = "<group>"; };
+		B8A7FA6F19C27D5A0023BEB9 /* SplashScreen-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "SplashScreen-568h@2x.png"; path = "res/SplashScreen-568h@2x.png"; sourceTree = "<group>"; };
+		B8A7FA7019C27D5A0023BEB9 /* SplashScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SplashScreen.png; path = res/SplashScreen.png; sourceTree = "<group>"; };
+		B8A7FA7119C27D5A0023BEB9 /* SplashScreen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "SplashScreen@2x.png"; path = "res/SplashScreen@2x.png"; sourceTree = "<group>"; };
 		B8C4976B16029FEE00682D61 /* BrowseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrowseViewController.h; sourceTree = "<group>"; };
 		B8C4976C16029FEE00682D61 /* BrowseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrowseViewController.m; sourceTree = "<group>"; };
 		B8C91EF815F5C7B20080254D /* GreatSchoolsWeek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GreatSchoolsWeek.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,9 +85,6 @@
 		B8C91F0B15F5C7B20080254D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B8C91F0C15F5C7B20080254D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B8C91F0F15F5C7B20080254D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		B8E4796C17E0BF4000334BCA /* SplashScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SplashScreen.png; path = res/SplashScreen.png; sourceTree = "<group>"; };
-		B8E4796D17E0BF4000334BCA /* SplashScreen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "SplashScreen@2x.png"; path = "res/SplashScreen@2x.png"; sourceTree = "<group>"; };
-		B8E4796E17E0BF4100334BCA /* SplashScreen-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "SplashScreen-568h@2x.png"; path = "res/SplashScreen-568h@2x.png"; sourceTree = "<group>"; };
 		B8E4797217E0BFD200334BCA /* About_30px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = About_30px.png; path = res/About_30px.png; sourceTree = "<group>"; };
 		B8E4797317E0BFD200334BCA /* About_60px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = About_60px.png; path = res/About_60px.png; sourceTree = "<group>"; };
 		B8E4797617E0C04A00334BCA /* Browse_30px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Browse_30px.png; path = res/Browse_30px.png; sourceTree = "<group>"; };
@@ -134,9 +134,9 @@
 				B8E4797717E0C04A00334BCA /* Browse_60px.png */,
 				B8E4797217E0BFD200334BCA /* About_30px.png */,
 				B8E4797317E0BFD200334BCA /* About_60px.png */,
-				B8E4796C17E0BF4000334BCA /* SplashScreen.png */,
-				B8E4796D17E0BF4000334BCA /* SplashScreen@2x.png */,
-				B8E4796E17E0BF4100334BCA /* SplashScreen-568h@2x.png */,
+				B8A7FA6F19C27D5A0023BEB9 /* SplashScreen-568h@2x.png */,
+				B8A7FA7019C27D5A0023BEB9 /* SplashScreen.png */,
+				B8A7FA7119C27D5A0023BEB9 /* SplashScreen@2x.png */,
 				B8E4798817E0C31B00334BCA /* Icon.png */,
 				B89FEB4E16091B76006A531C /* Default-568h@2x.png */,
 			);
@@ -252,6 +252,11 @@
 			attributes = {
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Michael Rizkalla";
+				TargetAttributes = {
+					B8C91EF715F5C7B20080254D = {
+						DevelopmentTeam = CJBDZNYS4M;
+					};
+				};
 			};
 			buildConfigurationList = B8C91EF215F5C7B20080254D /* Build configuration list for PBXProject "GreatSchoolsWeek" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -278,16 +283,15 @@
 				B8C91F0715F5C7B20080254D /* InfoPlist.strings in Resources */,
 				B8C91F1015F5C7B20080254D /* MainStoryboard.storyboard in Resources */,
 				B89FEB4F16091B76006A531C /* Default-568h@2x.png in Resources */,
-				B8E4796F17E0BF4100334BCA /* SplashScreen.png in Resources */,
-				B8E4797017E0BF4100334BCA /* SplashScreen@2x.png in Resources */,
-				B8E4797117E0BF4100334BCA /* SplashScreen-568h@2x.png in Resources */,
 				B8E4797417E0BFD300334BCA /* About_30px.png in Resources */,
 				B8E4797517E0BFD300334BCA /* About_60px.png in Resources */,
 				B8E4797817E0C04A00334BCA /* Browse_30px.png in Resources */,
 				B8E4797917E0C04A00334BCA /* Browse_60px.png in Resources */,
 				B8E4797E17E0C08400334BCA /* Event_30px.png in Resources */,
+				B8A7FA7219C27D5A0023BEB9 /* SplashScreen-568h@2x.png in Resources */,
 				B8E4797F17E0C08400334BCA /* Event_60px.png in Resources */,
 				B8E4798017E0C08400334BCA /* Map_30px.png in Resources */,
+				B8A7FA7419C27D5A0023BEB9 /* SplashScreen@2x.png in Resources */,
 				B8E4798117E0C08400334BCA /* Map_60px.png in Resources */,
 				B8E4798917E0C31B00334BCA /* Icon.png in Resources */,
 				B8E4799117E0C3AE00334BCA /* Icon-72.png in Resources */,
@@ -296,6 +300,7 @@
 				B8E4799417E0C3AE00334BCA /* Icon-Small-50@2x.png in Resources */,
 				B8E4799517E0C3AE00334BCA /* Icon-Small.png in Resources */,
 				B8E4799617E0C3AE00334BCA /* Icon-Small@2x.png in Resources */,
+				B8A7FA7319C27D5A0023BEB9 /* SplashScreen.png in Resources */,
 				B8E4799717E0C3AE00334BCA /* Icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,7 +425,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GreatSchoolsWeek/GreatSchoolsWeek-Prefix.pch";
 				INFOPLIST_FILE = "GreatSchoolsWeek/GreatSchoolsWeek-Info.plist";

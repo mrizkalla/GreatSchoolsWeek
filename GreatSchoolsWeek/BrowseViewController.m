@@ -35,7 +35,9 @@
     // Build the various browsable arrays.  Hard code for now but could get this from a json URL as well
     NSArray* catetories = [NSArray arrayWithObjects:@"Restaurants", @"Services", @"Retailers", @"Drinks and Desserts", @"Grocers", @"Family Entertainment", @"Food Trucks", nil];
     NSArray* days = [NSArray arrayWithObjects:@"Monday", @"Tuesday", @"Wednesday", @"Thursday", @"Friday", nil];
-    NSArray* percentValues = [NSArray arrayWithObjects:@"All Sales", @"10% or under", @"15%", @"20%", @"25%", @"30%", @"40% or over", @"Fixed Amount", nil];
+    // Removing "Fixed Amount (2014 only) and combining 30 and 40 or over
+    //NSArray* percentValues = [NSArray arrayWithObjects:@"All Sales", @"10% or under", @"15%", @"20%", @"25%", @"30%", @"40% or over", @"Fixed Amount", nil];
+    NSArray* percentValues = [NSArray arrayWithObjects:@"All Sales", @"10% or under", @"15%", @"20%", @"25%", @"30% or over", nil];
     
     [browseItemsArray addObject:catetories];
     [browseItemsArray addObject:days];
