@@ -424,8 +424,8 @@
 		B8C91F1815F5C7B20080254D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Cupertino Educational Endowment Foundation (CJBDZNYS4M)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Cupertino Educational Endowment Foundation (CJBDZNYS4M)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GreatSchoolsWeek/GreatSchoolsWeek-Prefix.pch";
 				INFOPLIST_FILE = "GreatSchoolsWeek/GreatSchoolsWeek-Info.plist";
